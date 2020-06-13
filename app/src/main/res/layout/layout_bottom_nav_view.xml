@@ -1,7 +1,8 @@
-<merge xmlns:android="http://schemas.android.com/apk/res/android">
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <RelativeLayout
-        android:layout_widght="match_parent"
+        android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_alignParentBottom="true"
         >
@@ -10,7 +11,9 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:id="@+id/bottomNavViewBar"
-            android:background="@color/colorPrimary"
+            android:background="@drawable/white_gray_border_bottom"
+            app:menu="@menu/bottom_navigation_menu"
+            app:labelVisibilityMode="unlabeled"
             >
 
         </com.google.android.material.bottomnavigation.BottomNavigationView>
